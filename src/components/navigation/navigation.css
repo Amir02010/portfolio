@@ -1,0 +1,70 @@
+.navigation {
+    position: fixed;
+    bottom: clamp(20px, 5vw, 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 500px;
+    width: calc(100% - 40px);
+    height: 60px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    background-color: var(--white);
+
+    transition: all .3s ease;
+    z-index: 1000;
+}
+
+.navigation svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary);
+    padding: 7px;
+    border-radius: 50%;
+    font-size: clamp(20px, 8vw, 47px);
+
+    cursor: pointer;
+    transition: all .3s ease;
+   
+}
+
+.navigation svg:hover {
+    transform: translateY(-15px);
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.def-nav > svg {
+    position: fixed;
+    bottom: clamp(20px, 5vw, 50px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100px;
+    height: 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--primary);
+    color: var(--white);
+
+    font-size: clamp(25px, 5vw, 50px);
+    cursor: pointer;
+
+    transition: all .3s ease;
+    z-index: 1001;
+    
+}
+
+.def-nav > svg:hover {
+    transform: translateX(-50%) scale(1.05);
+}
